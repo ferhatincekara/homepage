@@ -1,0 +1,18 @@
+module.exports = {
+  title: 'Ferhat incekara',
+  description:
+    'Hi, I’m Ferhat—a developer with a great passion for designing simple and elegant structures for complex interfaces dealing with front-end technologies.',
+  lang: 'en',
+  siteUrl: 'https://ferhatincekara.com',
+  googleAnalytic: '',
+  author: {
+    email: 'ferhatincekara@gmail.com',
+    name: 'Ferhat incekara',
+  },
+  social: {
+    instagram: 'https://instagram.com/f3rh47',
+    twitter: 'https://twitter.com/ferhatincekara',
+    github: 'https://github.com/ferhatincekara',
+    linkedin: 'https://linkedin.com/in/ferhatincekara',
+  },
+};
