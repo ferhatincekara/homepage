@@ -1,0 +1,43 @@
+// Colors
+
+$white: #fff;
+$black: #000;
+$buttercup: #f1c40f;
+
+// Global colors
+
+$body-color: $buttercup !default;
+$text-color: $black !default;
+$headings-color: inherit !default;
+$link-color: $black !default;
+$link-hover-color: $black !default;
+
+// Fonts
+
+$font-family-sans-serif: 'Acumin Pro', sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-root: null !default;
+$font-size-base: 1rem !default;
+$font-size-weight: 300 !default;
+
+$line-height-base: 1.8;
+
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.3328 !default;
+$headings-margin-bottom: px-to-rem(32px) !default;
+
+// Paragraphs
+
+$paragraph-margin-top: 1rem !default;
+
+// Grid
+
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;

@@ -1,0 +1,39 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function px-to-rem($value, $base-value: $font-size-root) {
+  @if $base-value == null {
+    $base-value: 16px;
+  }
+
+  @if type-of($value) != 'number' {
+    @warn 'value: #{$value} is not a number';
+    @return null;
+  }
+
+  @if type-of($base-value) != 'number' {
+    @warn 'base-value: #{$base-value} is not a number';
+    @return null;
+  }
+
+  @if unit($base-value) == '%' {
+    $base-value: ($base-value / 100%) * 16px;
+  }
+
+  @if unit($base-value) == 'rem' or unit($base-value) == 'em' {
+    $base-value: strip-unit($base-value) * 16px;
+  }
+
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+
+  @if (strip-unit($value) == 0) {
+    $value: 0;
+  }
+
+  @return $value;
+}

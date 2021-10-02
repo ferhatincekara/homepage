@@ -1,0 +1,93 @@
+@import 'normalize.css/normalize.css';
+@import 'styles/theme';
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  src: url('/fonts/AcuminPro/AcuminPro-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url('/fonts/AcuminPro/AcuminPro-Medium.woff2') format('woff2');
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+:root {
+  font-size: $font-size-root;
+}
+
+body {
+  background-color: $body-color;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-weight: $font-size-weight;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+[role='button'] {
+  cursor: pointer;
+}
+
+// Links
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headings-color;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+}
+
+// Body text
+
+p {
+  margin-top: $paragraph-margin-top;
+  margin-bottom: 0;
+}
