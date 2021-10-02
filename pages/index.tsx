@@ -1,7 +1,12 @@
 import type { NextPage } from 'next';
+import PageTransition from 'components/page-transition';
 
 const Home: NextPage = () => {
-  return <div>Hello World!</div>;
+  return (
+    <PageTransition>
+      <div>Hello World!</div>
+    </PageTransition>
+  );
 };
 
 export default Home;
