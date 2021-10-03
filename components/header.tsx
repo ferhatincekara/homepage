@@ -49,8 +49,8 @@ function Header() {
             <div className={styles.navWrapper}>
               <nav className={styles.navList}>
                 {MENU.map(({ name, url }) => (
-                  <div className={styles.navItem}>
-                    <Link key={url} href={url} blank>
+                  <div key={url} className={styles.navItem}>
+                    <Link href={url} blank>
                       {name}
                     </Link>
                   </div>
