@@ -1,0 +1,25 @@
+@import 'styles/theme';
+
+.footer {
+  background-color: $white;
+  padding-bottom: px-to-rem(56px);
+}
+
+.inner {
+  text-align: center;
+  padding-left: px-to-rem(28px);
+  padding-right: px-to-rem(28px);
+
+  @include media-breakpoint-down(sm) {
+    text-align: left;
+  }
+
+  p {
+    margin-top: 0;
+    padding-top: 1rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
