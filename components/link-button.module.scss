@@ -1,0 +1,25 @@
+@import 'styles/theme';
+
+.linkButton {
+  word-wrap: break-word;
+  color: $black;
+  font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-skip: auto;
+  text-decoration-skip-ink: auto;
+
+  &:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-skip: auto;
+    text-decoration-skip-ink: auto;
+  }
+}
