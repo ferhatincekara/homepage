@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { useState } from 'react';
+import { useState, MouseEvent } from 'react';
 import cx from 'classnames';
 import Hamburger from 'components/hamburger';
 import Link from 'components/link';
@@ -17,12 +17,26 @@ const MENU = [
 function Header() {
   const [open, setOpen] = useState(false);
 
+  const smoothScroll = (e: MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    const id: any = e.currentTarget.getAttribute('href');
+    const anchor: any = document.querySelector(id);
+    const offsetTop: any = anchor?.getBoundingClientRect().top + window.pageYOffset;
+
+    anchor.focus();
+    window.scroll({
+      top: offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
-        <Link href="#page" blank={false} className={styles.skipLink} tabIndex={1}>
+        <a href="#page" className={styles.skipLink} tabIndex={1} onClick={smoothScroll}>
           Skip to Content
-        </Link>
+        </a>
 
         <div className={styles.inner}>
           <div className={styles.title}>

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Header />
-      <main id="page" className="main" role="main">
+      <main id="page" className="main" role="main" tabIndex={-1}>
         <section className="page-section">
           <Component {...pageProps} />
         </section>
