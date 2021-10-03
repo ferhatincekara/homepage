@@ -63,6 +63,13 @@ a {
     color: $link-hover-color;
     text-decoration: none;
   }
+
+  &:focus {
+    outline-width: 2px;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-color: $black;
+  }
 }
 
 // Images
