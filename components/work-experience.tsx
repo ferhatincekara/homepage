@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import styles from 'components/work-experience.module.scss';
 
 const WORK = [
@@ -12,10 +13,10 @@ function WorkExperience() {
       <p>WORK EXPERIENCE</p>
       <p>
         {WORK.map(({ position, company, date }, index) => (
-          <>
+          <Fragment key={index}>
             {`${position} → ${company}, ${date}`}
             {WORK.length - 1 === index || <br />}
-          </>
+          </Fragment>
         ))}
       </p>
     </div>
