@@ -1,0 +1,44 @@
+@import 'styles/theme';
+
+.home {
+  width: 100%;
+  padding-top: px-to-rem(48px);
+  padding-bottom: px-to-rem(48px);
+}
+
+.inner {
+  display: flex;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+}
+
+.iam {
+  flex: 1 0 41.6667%;
+}
+
+.about {
+  font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+  white-space: pre-wrap;
+}
+
+.work {
+  margin-top: px-to-rem(120px);
+
+  @include media-breakpoint-down(sm) {
+    margin-top: px-to-rem(18px);
+  }
+}
+
+.spacer {
+  flex: 1 0 8.3333%;
+}
+
+.photo {
+  flex: 1 0 50%;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: px-to-rem(28px);
+  }
+}

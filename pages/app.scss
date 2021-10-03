@@ -102,6 +102,8 @@ p {
 }
 
 .page-section {
+  display: flex;
+  align-items: center;
   min-height: 100vh;
   padding-left: px-to-rem(28px);
   padding-right: px-to-rem(28px);
