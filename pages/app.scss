@@ -91,3 +91,18 @@ p {
   margin-top: $paragraph-margin-top;
   margin-bottom: 0;
 }
+
+.main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-top: px-to-rem(97px);
+  background-color: $white;
+}
+
+.page-section {
+  min-height: 100vh;
+  padding-left: px-to-rem(28px);
+  padding-right: px-to-rem(28px);
+}
