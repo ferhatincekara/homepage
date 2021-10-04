@@ -4,7 +4,7 @@ module.exports = {
     'Hi, I’m Ferhat—a developer with a great passion for designing simple and elegant structures for complex interfaces dealing with front-end technologies.',
   lang: 'en',
   siteUrl: 'https://ferhatincekara.com',
-  googleAnalytic: '',
+  googleAnalytic: 'G-882T00TRKX',
   author: {
     email: 'ferhatincekara@gmail.com',
     name: 'Ferhat incekara',

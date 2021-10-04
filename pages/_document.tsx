@@ -39,6 +39,22 @@ class MyDocument extends NextDocument {
           <link color="#000000" href="/static/safari-pinned-tab.svg" rel="mask-icon" />
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
+
+          {/* analytic */}
+          {SiteConfig.googleAnalytic && (
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${SiteConfig.googleAnalytic}`}
+              />
+              <script
+                type="text/javascript"
+                dangerouslySetInnerHTML={{
+                  __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${SiteConfig.googleAnalytic}');`,
+                }}
+              />
+            </>
+          )}
         </Head>
 
         <body>
