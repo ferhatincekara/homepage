@@ -10,7 +10,7 @@ module.exports = {
     name: 'Ferhat incekara',
   },
   social: {
-    instagram: 'https://instagram.com/f3rh47',
+    instagram: 'https://instagram.com/ferhat_jpeg',
     twitter: 'https://twitter.com/ferhatincekara',
     github: 'https://github.com/ferhatincekara',
     linkedin: 'https://linkedin.com/in/ferhatincekara',

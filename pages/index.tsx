@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           <div className={styles.spacer} />
           <div className={styles.photo}>
             <NextImage
-              src="/photos/ferhatincekara.jpg"
+              src="/photos/ferhatincekara.webp"
               alt="Ferhat incekara"
               width={1080}
               height={1080}
