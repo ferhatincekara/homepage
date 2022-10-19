@@ -78,7 +78,7 @@ class MyDocument extends NextDocument {
           )}
         </Head>
 
-        <body className="bg-[#101010] text-white antialiased">
+        <body className="bg-[#101010] py-24 text-white antialiased">
           <Main />
           <NextScript />
         </body>
