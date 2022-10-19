@@ -12,8 +12,8 @@ const Home: NextPage = () => {
           <Image
             src="https://s.gravatar.com/avatar/4226fe7661a9fba579db19891aa1dd62?s=512"
             alt="Ferhat incekara"
-            width={56}
-            height={56}
+            width={96}
+            height={96}
             className="rounded-full"
           />
         </div>
